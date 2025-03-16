@@ -6,7 +6,19 @@ namespace Stopwatch
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("teste");
+            Start();
+        }
+
+        static void Start()
+        {
+            int time = 10;
+            int currentTime = 0;
+
+            while (currentTime != time)
+            {
+                Console.WriteLine(currentTime++);
+                Console.WriteLine(currentTime);
+            }
         }
     }
 }
